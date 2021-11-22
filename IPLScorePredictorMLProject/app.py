@@ -61,5 +61,7 @@ if st.button('Predict Probability'):
     loss = result[0][0]
     st.header(batting_team + "- " + str(round(win*100)) + "%")
     st.header(bowling_team + "- " + str(round(loss*100)) + "%")
-
+    item = [win, loss]
+    df = pd.DataFrame(item)
+    st.bar_chart(data=df)
    
