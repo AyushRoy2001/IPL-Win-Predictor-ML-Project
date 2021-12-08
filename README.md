@@ -15,5 +15,14 @@ Screenshots of webpage where the model is deployed
   -> Two datasets are used for the project(deliveries and match).<br/>
   -> the datasets are processed and merged for the required dataset.<br/>
   -> Datasets taken from Kaggle.<br/>
- ## *5. Contributers*
+ ## *4. Used*
+ ![Logo](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=darkgreen)
+ ![Logo](https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white)
+ ![Logo](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white)
+ ![Logo](https://img.shields.io/badge/Jupyter-F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=white)
+ ![Logo](https://img.shields.io/badge/SciPy-654FF0?style=for-the-badge&logo=SciPy&logoColor=white)
+ ![Logo](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)
+ ## *5. IDE*
+ ![Logo](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual%20studio&logoColor=white)
+ ## *6. Contributers*
   -> Ayush Roy<br/>
