@@ -1,8 +1,19 @@
+import numpy as np
 from numpy import string_
 import streamlit as st
 import pickle
 import pandas as pd
 from PIL import Image
+from streamlit_lottie import st_lottie
+from streamlit_lottie import st_lottie_spinner
+import json
+import requests
+
+def load_lottieurl(url: str):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
 
 
 teams = ['Sunrisers Hyderabad',
@@ -24,9 +35,10 @@ cities = ['Hyderabad', 'Bangalore', 'Mumbai', 'Indore', 'Kolkata', 'Delhi',
 pipe = pickle.load(open('pipe.pkl','rb'))
 st.title('IPL Win Predictor')
 
-image = Image.open('logo.jpg')
-st.image(image, width=500)
-
+#image = Image.open('logo.jpg')
+#st.image(image, width=500)
+lottie_situp = load_lottieurl("https://assets7.lottiefiles.com/packages/lf20_6eeyigak.json")
+st_lottie(lottie_situp)
 col1, col2 = st.columns(2)
 
 with col1:
@@ -64,4 +76,3 @@ if st.button('Predict Probability'):
     item = [win, loss]
     df = pd.DataFrame(item)
     st.bar_chart(data=df)
-   
