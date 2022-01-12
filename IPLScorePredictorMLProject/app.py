@@ -76,3 +76,4 @@ if st.button('Predict Probability'):
     item = [win, loss]
     df = pd.DataFrame(item)
     st.bar_chart(data=df)
+    st.balloons()
